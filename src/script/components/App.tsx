@@ -20,7 +20,7 @@ export default class App extends React.Component<IAppProps, IAppState> {
 
     handledClickUpper(e, key: number) {
         // 状態(List)の変更
-        const upperList = this.state.upperList.filterNot((l) => l == key).toList();
+        const upperList = this.state.upperList.filterNot((k) => k === key).toList();
         const lowerList = this.state.lowerList.push(key);
 
         this.setState({ upperList: upperList, lowerList: lowerList });
@@ -29,7 +29,7 @@ export default class App extends React.Component<IAppProps, IAppState> {
     handledClickLower(e, key: number) {
         // 状態(List)の変更
         const upperList = this.state.upperList.push(key);
-        const lowerList = this.state.lowerList.filterNot((l) => l == key).toList();
+        const lowerList = this.state.lowerList.filterNot((k) => k === key).toList();
 
         this.setState({ upperList: upperList, lowerList: lowerList });
     }
@@ -37,21 +37,21 @@ export default class App extends React.Component<IAppProps, IAppState> {
     render() {
         // Listの生成
         const upperList = <ul className="upperList">
-            {this.state.upperList.map((l) =>
+            {this.state.upperList.map((k) =>
                 <li
-                    key={l}
-                    onClick={(e) => this.handledClickUpper(e, l)}>
-                    {l}
+                    key={k}
+                    onClick={(e) => this.handledClickUpper(e, k)}>
+                    {k}
                 </li>)
             }
         </ul>;
 
         const lowerList = <ul className="lowerList">
-            {this.state.lowerList.map((l) =>
+            {this.state.lowerList.map((k) =>
                 <li
-                    key={l}
-                    onClick={(e) => this.handledClickLower(e, l)}>
-                    {l}
+                    key={k}
+                    onClick={(e) => this.handledClickLower(e, k)}>
+                    {k}
                 </li>)
             }
         </ul>;
