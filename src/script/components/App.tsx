@@ -18,8 +18,6 @@ export default class App extends React.Component<any, IAppState> {
     render() {
         const message = this.state.clicked ? "Hyahhaaaaaa!!!!" : "Click ME!";
 
-        return (
-            <h1 onClick={(e) => this.handledClick(e)}>{message}</h1>
-        );
+        return <h1 onClick={(e) => this.handledClick(e)}>{message}</h1>;
     }
 }
