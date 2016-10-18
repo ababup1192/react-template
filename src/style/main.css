@@ -1,1 +1,36 @@
 @import url(~sanitize.css/sanitize.css);
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.upperList {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.lowerList {
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.upperList li {
+    width: 80px;
+    height: 80px;
+    border: 2px solid mediumpurple;
+    cursor: pointer;
+}
+
+.lowerList li {
+    width: 80px;
+    height: 80px;
+    border: 2px solid deepskyblue;
+    cursor: pointer;
+}
