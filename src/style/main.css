@@ -1,4 +1,6 @@
 @import url(~sanitize.css/sanitize.css);
+
+/* div要素は、縦並び */
 .listContainer {
     display: flex;
     flex-direction: column;
@@ -6,6 +8,7 @@
     text-align: center;
 }
 
+/* 横並び */
 .upperList {
     margin: auto;
     display: flex;
@@ -13,6 +16,7 @@
     list-style: none;
 }
 
+/* 横並び */
 .lowerList {
     margin: auto;
     margin-top: 30px;
@@ -21,6 +25,7 @@
     list-style: none;
 }
 
+/* リストの要素に高さと幅を持たせて、ボーダーを設ける */
 .upperList li {
     width: 80px;
     height: 80px;
