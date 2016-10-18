@@ -16,6 +16,7 @@ describe("calc", () => {
 
     expect(5050).toBe(sum_list(list));
   });
+
   it("should return sum of double list", () => {
     const list = Range(1, Infinity).take(5).toList();
     const expected = 2 * (1 + 2 + 3 + 4 + 5);
@@ -23,6 +24,7 @@ describe("calc", () => {
 
     expect(2 * (1 + 2 + 3 + 4 + 5)).toBe(sum_list(double_list(list)));
   });
+
   it("should return double Map", () => {
     const numMap = Map({ a: 1, b: 2, c: 3, d: 4, e: 5 });
     const expected = Map({ a: 2, b: 4, c: 6, d: 8, e: 10 });
@@ -30,6 +32,7 @@ describe("calc", () => {
 
     expect(expected.equals(actual)).toBeTruthy();
   });
+
   it("should return sum of double Map with key filter", () => {
     const numMap = Map({ a: 1, b: 2, c: 3, d: 4, e: 5 });
     const expected = 2 * (1 + 3 + 5);
