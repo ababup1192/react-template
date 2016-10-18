@@ -1,0 +1,39 @@
+{
+  "name": "typescript-template",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "dependencies": {
+    "css-loader": "^0.25.0",
+    "html-webpack-plugin": "^2.22.0",
+    "immutable": "^3.8.1",
+    "jest": "^16.0.1",
+    "jest-cli": "^16.0.1",
+    "pug-html-loader": "^1.0.9",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "sanitize.css": "^4.1.0",
+    "style-loader": "^0.13.1",
+    "ts-jest": "^0.1.8",
+    "ts-loader": "^0.9.4",
+    "tslint": "^3.15.1",
+    "typescript": "^2.0.3",
+    "typings": "^1.4.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/ts-jest/preprocessor.js",
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  }
+}
