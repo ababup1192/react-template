@@ -1,6 +1,6 @@
 # Typescript Template
 
-[![CircleCI](https://circleci.com/gh/ababup1192/typescript-template.svg?style=svg)](https://circleci.com/gh/ababup1192/typescript-template)
+[![CircleCI](https://circleci.com/gh/ababup1192/react-template.svg?style=svg)](https://circleci.com/gh/ababup1192/react-template)
 
 # Preparation
 
