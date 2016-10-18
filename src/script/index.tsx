@@ -9,4 +9,4 @@ import App from "./components/App";
 
 const appNode = document.getElementById("content");
 
-ReactDOM.render(<App />, appNode);
+ReactDOM.render(<App message="Hyahhhaaaaaaa!!" />, appNode);
