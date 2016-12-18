@@ -3,6 +3,8 @@
         "module": "commonjs",
         "target": "es5",
         "noImplicitAny": false,
+        "strictNullChecks": false,
+        "alwaysStrict": true,
         "sourceMap": false,
         "jsx": "react"
     },
