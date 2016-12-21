@@ -4,6 +4,6 @@
     "react-dom": "registry:npm/react-dom#15.0.1+20160826174104"
   },
   "globalDependencies": {
-    "jest": "registry:dt/jest#15.1.1+20160919141445"
+    "jest": "registry:dt/jest#16.0.0+20161220121457"
   }
 }
