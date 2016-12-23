@@ -9,6 +9,10 @@
     "start": "webpack-dev-server"
   },
   "dependencies": {
+    "@types/immutable": "^3.8.6",
+    "@types/jest": "^16.0.2",
+    "@types/react": "^0.14.55",
+    "@types/react-dom": "^0.14.19",
     "css-loader": "^0.25.0",
     "html-webpack-plugin": "^2.22.0",
     "immutable": "^3.8.1",

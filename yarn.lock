@@ -2,6 +2,24 @@
 # yarn lockfile v1
 
 
+"@types/immutable@^3.8.6":
+  version "3.8.6"
+  resolved "https://registry.yarnpkg.com/@types/immutable/-/immutable-3.8.6.tgz#3612786c3c5ba4084cc9bf18b7eaf925438a00e5"
+
+"@types/jest@^16.0.2":
+  version "16.0.2"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-16.0.2.tgz#77dd322d5c59119ccc41480c57b98e4f735c1c01"
+
+"@types/react-dom@^0.14.19":
+  version "0.14.19"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-0.14.19.tgz#698a14335e32fb1bc61db65f5647c9668a7fc2eb"
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@^0.14.55":
+  version "0.14.55"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-0.14.55.tgz#f7f7a6ad0c94780531e95632435b2798c5dad11b"
+
 Base64@~0.2.0:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/Base64/-/Base64-0.2.1.tgz#ba3a4230708e186705065e66babdd4c35cf60028"
@@ -4277,11 +4295,7 @@ typedarray@~0.0.5:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typescript@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.0.3.tgz#33dec9eae86b8eee327dd419ca050c853cabd514"
-
-typescript@^2.1.4:
+typescript@^2.0.3, typescript@^2.1.4:
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.1.4.tgz#b53b69fb841126acb1dd4b397d21daba87572251"
 
