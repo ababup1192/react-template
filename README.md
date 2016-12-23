@@ -1,17 +1,20 @@
-# Typescript Template
+# React Template
 
 [![CircleCI](https://circleci.com/gh/ababup1192/react-template.svg?style=svg)](https://circleci.com/gh/ababup1192/react-template)
 
 # Preparation
 
-```
-$ brew install yarn
+[Install Node.js](https://github.com/hokaccha/nodebrew)
 
+[Install Yarn](https://yarnpkg.com/en/docs/install)
+
+Install packages
+```
 $ yarn
-$ yarn run typings install
 ```
 
 # Testing
+
 ```
 $ yarn test
 ```
@@ -26,4 +29,5 @@ $ open http://localhost:8080/webpack-dev-server/
 # Build
 ```
 $ yarn build
+// Create index.html and bundle.js to build/
 ```
