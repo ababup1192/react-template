@@ -1,41 +1,61 @@
 @import url(~sanitize.css/sanitize.css);
+#content {
+    padding: 20px;
+}
 
-/* div要素は、縦並び */
-.listContainer {
+label {
+    width: 10em;
+    padding-right: 0.5em;
+    order: 1;
+}
+
+input {
+    width: 55px;
+     background-color: rgba(147, 128, 108, 0.1);
+    color: #666666;
+    font: inherit;
+    font-weight: normal;
+    flex: 1 1 auto;
+    order: 2;
+   }
+
+.fizzbuzzInputs {
     display: flex;
-    flex-direction: column;
-    margin-top: 200px;
+    margin-left: 40px;
+}
+
+#buzzContainer {
+    margin-left: 10px;
+}
+
+.fizzBuzzList {
+    width: 860px;
+    margin: 30px 0;
+    list-style: none;
     text-align: center;
-}
-
-/* 横並び */
-.upperList {
-    margin: auto;
     display: flex;
-    flex-direction: row;
-    list-style: none;
+    flex-wrap: wrap;
 }
 
-/* 横並び */
-.lowerList {
-    margin: auto;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-}
-
-/* リストの要素に高さと幅を持たせて、ボーダーを設ける */
-.upperList li {
+.fizzBuzzList li {
     width: 80px;
-    height: 80px;
-    border: 2px solid mediumpurple;
+    height: 35px;
+    border: 1px solid;
     cursor: pointer;
 }
 
-.lowerList li {
-    width: 80px;
-    height: 80px;
-    border: 2px solid deepskyblue;
-    cursor: pointer;
+.numberElement {
+    background-color: rgba(147, 128, 108, 0.1);
+}
+
+.fizz {
+    background-color: #ee5e97;
+}
+
+.buzz {
+    background-color: #c5b66d;
+}
+
+.fizzbuzz {
+    background-color: #ffc753;
 }
