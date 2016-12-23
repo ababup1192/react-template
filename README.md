@@ -13,6 +13,13 @@ Install packages
 $ yarn
 ```
 
+Manage packages
+```
+$ yarn add [package-name]
+$ yarn upgrade [package-name]
+$ yarn remove [package-name]
+```
+
 # Testing
 
 ```
