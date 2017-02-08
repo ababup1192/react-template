@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server --inline"
   },
   "dependencies": {
     "@types/immutable": "^3.8.6",
