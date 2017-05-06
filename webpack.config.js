@@ -8,23 +8,31 @@ var config = {
     filename: "bundle.js"
   },
   resolve: {
-    extensions: ["", ".ts", ".tsx", ".js"]
+    extensions: [".ts", ".tsx", ".js"]
   },
   module: {
-    loaders: [
-    {
-      test: /\.tsx?$/,
-      loader: "ts-loader",
-      exclude: /node_modules/
-    },
-    {
-      include: /\.pug$/,
-      loader: ("pug-html-loader?pretty")
-    },
-    {
-      include: /\.css$/,
-      loader: "style-loader!css-loader"
-    }
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: "ts-loader",
+        exclude: /node_modules/
+      },
+      {
+        test: /\.pug$/,
+        use: [{
+          loader: "pug-loader",
+          options: {
+            pretty: true
+          }
+        }]
+      },
+      {
+        test: /\.css$/,
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" }
+        ]
+      }
     ]
   },
   plugins: [
